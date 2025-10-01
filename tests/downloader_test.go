@@ -4,10 +4,11 @@ import (
 	"context"
 	"fmt"
 	"imageExtractor/internal/downloader"
+	"testing"
 	"time"
 )
 
-func main() {
+func TestDownloader(t *testing.T) {
 	urls := []string{"https://app.akharinkhabar.ir/images/2025/09/30/5548fd5b-80af-406b-8d48-4355e4574447.jpeg"}
 	d := downloader.NewHTTPDownloader(nil, 5)
 
