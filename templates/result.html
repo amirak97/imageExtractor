@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>نتایج استخراج</title>
+  <link rel="stylesheet" href="/templates/style.css">
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+</head>
+<body>
+<h1>{{ len .Images }} تصویر یافت شد.</h1>
+
+<ol class="image-list">
+  {{range .Images}}
+  <li>
+    <img src="{{.Link}}" alt="Extracted image" onerror="handleImageError(this, '{{.Link}}')">
+    <a href="{{.Link}}" class="image-link" style="display: none;">{{.Link}}</a>
+  </li>
+  {{end}}
+</ol>
+
+<a href="/" class="btn">بازگشت به صفحه اصلی</a>
+
+<footer>توسعه داده شده توسط A.H.K</footer>
+
+<script>
+  function handleImageError(img, link) {
+    img.style.display = 'none'; // مخفی کردن تصویر
+    img.nextElementSibling.style.display = 'block'; // نمایش لینک
+  }
+</script>
+</body>
+</html>

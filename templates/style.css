@@ -1,0 +1,101 @@
+body {
+    font-family: "Vazir", sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #dbe9f4);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+    color: #1e88e5;
+    font-size: 1.8rem;
+}
+
+form {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="url"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+input[type="url"]:focus {
+    outline: none;
+    border-color: #1e88e5;
+    box-shadow: 0 0 5px rgba(30,136,229,0.3);
+}
+
+input[type="submit"], .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #1e88e5;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, .btn:hover {
+    background-color: #1565c0;
+}
+
+.image-list {
+    list-style-type: decimal;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.image-list li {
+    margin: 15px 0;
+}
+
+.image-list img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    margin-top: 60px;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 480px) {
+    form {
+        margin: 30px 15px;
+        padding: 25px 20px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+}
