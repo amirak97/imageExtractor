@@ -33,7 +33,7 @@ func main() {
 	mux.Handle("/templates/", http.StripPrefix("/templates/", fs))
 
 	// Start the server
-	addr := ":8080"
+	addr := ":80"
 	log.Printf("Server started at http://localhost%s", addr)
 	if err := http.ListenAndServe(addr, mux); err != nil {
 		log.Fatalf("server error: %v", err)
